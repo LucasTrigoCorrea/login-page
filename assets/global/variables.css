@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'mark-pro-bold.woff';
+    src: url('/files/fonts/mark-pro-bold.woff');
+}
+
+@font-face {
+    font-family: 'mark-pro-regular.woff';
+    src: url('/files/fonts/mark-pro-regular.woff');
+}
+
+:root {
+    --cor-preto: #000000;
+    --cor-cinza-escuro: #1f1f1f;
+    --cor-cinza-claro: #e9ecf3;
+    --cor-branco: #ffffff;
+    --cor-principal: #ff9500;
+    --regular: 'mark-pro-regular.woff';
+    --bold: 'mark-pro-bold.woff';
+}

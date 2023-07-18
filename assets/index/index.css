@@ -1,0 +1,152 @@
+@import '/assets/global/global.css';
+
+section.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+section.login .quadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-branco);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px;
+}
+
+
+section.login .quadro .faixa {
+    width: 900px;
+    height: 150px;
+    background-color: var(--cor-principal);
+    position: absolute;
+    animation: rodarfaixa 20s linear infinite;
+    z-index: 1;
+    box-shadow: 0 0 30px 0 var(--cor-principal);
+
+}
+
+@keyframes rodarfaixa {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section.login .quadro .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-branco);
+    z-index: 2;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+section.login .quadro .conteudo h2 {
+    font-family: var(--bold);
+    font-size: 2rem;
+    color: var(--cor-principal);
+    letter-spacing: 10px;
+}
+
+section.login .quadro .conteudo p {
+    font-family: var(--regular);
+    font-size: 1rem;
+    color: var(--cor-cinza-escuro);
+    line-height: 1.5;
+}
+
+section.login .quadro .conteudo label {
+    font-family: var(--regular);
+    font-size: 0.8rem;
+    color: var(--cor-cinza-escuro);
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+
+section.login .quadro .conteudo label span {
+    color: var(--cor-principal);
+}
+
+section.login .quadro .conteudo .input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section.login .quadro .conteudo .input .bolinha{
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-principal);
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+section.login .quadro .conteudo .input:hover .bolinha {
+    transform: scale(0.8);
+    background-color: var(--cor-cinza-escuro);
+}
+
+
+
+section.login .quadro .conteudo input {
+    font-family: var(--regular);
+    font-size: 1rem;
+    color: var(--cor-cinza-escuro);
+    line-height: 1.5;
+    background-color: var(--cor-cinza-claro);
+    width: 100%;
+    padding: 20px 20px 20px 45px;
+    border-radius: 10px;
+
+}
+
+section.login .quadro .conteudo .input input::placeholder {
+    color: #00000053;
+}
+
+section.login .quadro .conteudo button {
+    font-family: var(--bold);
+    font-size: 1rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-principal);
+    line-height: 1.5;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    transition: all 0.5s;
+}
+
+section.login .quadro .conteudo button:hover {
+    background-color: var(--cor-cinza-escuro);
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+    section.login .quadro .conteudo {
+        padding: 40px 20px;
+    }
+}
